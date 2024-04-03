@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="{{ page.url }}">
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+        <title>
+            {% if title %}{{ title }} - {% endif %}{{ site.title }}
+        </title>
+        {% if site.env %}
+            <!-- Capture the CSS content as a Nunjucks variable -->
+            {% set css %}{% include "styles.css" %}{% include "chassis.min.css" %}{% endset %}
+            <style>
+                {{css | safe}}
+            </style>
+        {% else %}
+            <link rel="stylesheet" href="/static/chassis.min.css">
+            <link rel="stylesheet" href="/static/styles.css">
+        {% endif %}
+    </head>
+    <body> 
+        {% include "header.njk" %}
+        {{ content | safe }}
+    </body>
+    <script src="/static/app.min.js" defer></script>
+</html>

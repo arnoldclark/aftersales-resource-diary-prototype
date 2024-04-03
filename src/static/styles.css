@@ -1,0 +1,49 @@
+body {
+  background-color: #FAFAFA;
+}
+
+.ch-navbar__title {
+  font-size: 16px;
+}
+
+.ch-navbar__title img {
+  margin-right: 14px;
+}
+
+.br-branch-container {
+  border-radius: 0px 0px 24px 24px;
+}
+
+.ch-navbar__user {
+  height: 48px;
+  width: 48px;
+  display: block;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 48px;
+}
+
+.ch-navbar__user:hover {
+  color: #fff;
+}
+
+.ch-btn--block+.ch-btn--block {
+  margin-top: 0px;
+}
+
+.br-branch-picker {
+  /* font-size: 24px;
+  font-weight: 500; */
+}
+
+.br-branch-picker__label {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.br-branch-picker__select {
+  opacity: 0;
+}

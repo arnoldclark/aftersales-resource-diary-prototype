@@ -799,7 +799,7 @@ class ResourceDiary extends React.Component {
         ]
       },
       {
-        name: "Labour",
+        name: "Courtesy car",
         hours: [
           {
             day: "Mon",

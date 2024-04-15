@@ -30,6 +30,17 @@ body {
   color: #fff;
 }
 
+.ch-navbar__nav li a, 
+.ch-navbar__nav li span, 
+.ch-navbar__nav__item a, 
+.ch-navbar__nav__item span {
+  margin: 24px 0;
+}
+
+.ch-navbar--active a {
+  background-color: #242d2c;
+}
+
 .ch-btn--block+.ch-btn--block {
   margin-top: 0px;
 }
@@ -46,4 +57,33 @@ body {
 
 .br-branch-picker__select {
   opacity: 0;
+}
+
+.br-calendar {
+  overflow-x: auto;
+}
+
+.br-calendar table {
+  /* border-collapse: separate; */
+  table-layout: fixed;
+  width: 1vw;
+}
+
+.ch-bg--ac-red-1 {
+  background-color: #FFF5F5;
+}
+
+.ch-bg--ac-orange-1 {
+  background-color: #FFFAF5;
+}
+
+.br-calendar table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.br-calendar table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 1;
 }

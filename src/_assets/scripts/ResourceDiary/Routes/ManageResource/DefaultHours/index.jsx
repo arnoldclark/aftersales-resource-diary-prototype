@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import BranchSelector from '../../Components/BranchSelector';
-import Menu from '../../Components/Menu';
-import EditHours from '../../Modals/EditHours';
-import formatTime from '../../Utilities/FormatTime';
-import Toast from '../../Components/Toast';
+import BranchSelector from '../../../Components/BranchSelector';
+import Menu from '../../../Components/Menu';
+import EditHours from '../../../Modals/EditHours';
+import formatTime from '../../../Utilities/FormatTime';
+import Toast from '../../../Components/Toast';
+import Header from '../../../Components/Header';
 
 const DefaultHours = ({selectedBranch, branches, setBranch, defaultHours, modalIsOpen, openModal, closeModal, updateDefaultHours, toast, removeToast}) => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const DefaultHours = ({selectedBranch, branches, setBranch, defaultHours, modalI
     <>
       { modalIsOpen && 
         <EditHours close={closeModal} editHours={editHours.hours} editRtsCode={editHours.rtsCode} updateDefaultHours={updateDefaultHours} /> }
-
+      <Header active="manage-resource" />
       <BranchSelector setBranch={setBranch} selectedBranch={selectedBranch} branches={branches} />
 
       <div className="ch-container">

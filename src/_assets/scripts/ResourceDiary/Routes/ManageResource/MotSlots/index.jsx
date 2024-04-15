@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
-import Menu from '../../Components/Menu';
-import BranchSelector from '../../Components/BranchSelector';
-import Toast from '../../Components/Toast';
+import Menu from '../../../Components/Menu';
+import BranchSelector from '../../../Components/BranchSelector';
+import Toast from '../../../Components/Toast';
+import Header from '../../../Components/Header';
 
 const MotSlots = ({setBranch, selectedBranch, branches, motResource, updateMotResource, toast, removeToast}) => {
   const location = useLocation();
@@ -16,6 +17,7 @@ const MotSlots = ({setBranch, selectedBranch, branches, motResource, updateMotRe
 
   return (
     <>
+      <Header active="manage-resource" />
       <BranchSelector setBranch={setBranch} selectedBranch={selectedBranch} branches={branches} />
 
       <div className="ch-container">

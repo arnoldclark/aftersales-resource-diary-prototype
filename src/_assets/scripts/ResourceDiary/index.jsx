@@ -5,9 +5,10 @@ import {
   useLocation
 } from 'react-router-dom';
 import Index from './Routes/Index';
-import DefaultHours from './Routes/DefaultHours';
-import OverrideHours from './Routes/OverrideHours';
-import MotSlots from './Routes/MotSlots';
+import DefaultHours from './Routes/ManageResource/DefaultHours';
+import OverrideHours from './Routes/ManageResource/OverrideHours';
+import MotSlots from './Routes/ManageResource/MotSlots';
+import ResourceDiaryView from './Routes/ResourceDiary';
 
 class ResourceDiary extends React.Component {
   state = {
@@ -832,6 +833,1061 @@ class ResourceDiary extends React.Component {
         ]
       }
     ], 
+    resourceHours: [
+      {
+        name: "Labour",	
+        hours: [
+          {
+            resource: 12,
+            booked: 27
+          },
+          {
+            resource: 12,
+            booked: 19
+          },
+          {
+            resource: 12,
+            booked: 21
+          },
+          {
+            resource: 12,
+            booked: 20
+          },
+          {
+            resource: 12,
+            booked: 25
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 19
+          },
+          {
+            resource: 12,
+            booked: 18
+          },
+          {
+            resource: 12,
+            booked: 15
+          },
+          {
+            resource: 12,
+            booked: 7
+          },
+          {
+            resource: 12,
+            booked: 12
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 9
+          },
+          {
+            resource: 12,
+            booked: 5
+          },
+          {
+            resource: 12,
+            booked: 4
+          },
+          {
+            resource: 12,
+            booked: 2
+          },
+          {
+            resource: 12,
+            booked: 2
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "MOT",	
+        hours: [
+          {
+            resource: 5,
+            booked: 9
+          },
+          {
+            resource: 5,
+            booked: 7
+          },
+          {
+            resource: 5,
+            booked: 7
+          },
+          {
+            resource: 5,
+            booked: 6
+          },
+          {
+            resource: 5,
+            booked: 4
+          },
+          {
+            resource: 3,
+            booked: 5
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 10
+          },
+          {
+            resource: 5,
+            booked: 5
+          },
+          {
+            resource: 5,
+            booked: 4
+          },
+          {
+            resource: 5,
+            booked: 3
+          },
+          {
+            resource: 5,
+            booked: 1
+          },
+          {
+            resource: 3,
+            booked: 3
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 2
+          },
+          {
+            resource: 5,
+            booked: 1
+          },
+          {
+            resource: 5,
+            booked: 1
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 5,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Service",	
+        hours: [
+          {
+            resource: 11,
+            booked: 13
+          },
+          {
+            resource: 11,
+            booked: 10
+          },
+          {
+            resource: 11,
+            booked: 10
+          },
+          {
+            resource: 11,
+            booked: 12
+          },
+          {
+            resource: 11,
+            booked: 14
+          },
+          {
+            resource: 5,
+            booked: 5
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 11,
+            booked: 14
+          },
+          {
+            resource: 11,
+            booked: 12
+          },
+          {
+            resource: 11,
+            booked: 10
+          },
+          {
+            resource: 11,
+            booked: 10
+          },
+          {
+            resource: 11,
+            booked: 12
+          },
+          {
+            resource: 5,
+            booked: 6
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 11,
+            booked: 6
+          },
+          {
+            resource: 11,
+            booked: 4
+          },
+          {
+            resource: 11,
+            booked: 6
+          },
+          {
+            resource: 11,
+            booked: 2
+          },
+          {
+            resource: 11,
+            booked: 3
+          },
+          {
+            resource: 5,
+            booked: 4
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 11,
+            booked: 4
+          },
+          {
+            resource: 11,
+            booked: 3
+          },
+          {
+            resource: 11,
+            booked: 4
+          },
+          {
+            resource: 11,
+            booked: 6
+          },
+          {
+            resource: 11,
+            booked: 2
+          },
+          {
+            resource: 5,
+            booked: 1
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Sales",	
+        hours: [
+          {
+            resource: 75,
+            booked:  42
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 65,
+            booked:  0
+          },
+          {
+            resource: 15,
+            booked:  0
+          },
+          {
+            resource: 0,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 65,
+            booked:  0
+          },
+          {
+            resource: 15,
+            booked:  0
+          },
+          {
+            resource: 0,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 65,
+            booked:  0
+          },
+          {
+            resource: 15,
+            booked:  0
+          },
+          {
+            resource: 0,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 75,
+            booked:  0
+          },
+          {
+            resource: 65,
+            booked:  0
+          },
+          {
+            resource: 15,
+            booked:  0
+          },
+          {
+            resource: 0,
+            booked:  0
+          }
+        ]
+      },
+      {
+        name: "Collect/Deliver",	
+        hours: [
+          {
+            resource: 3,
+            booked: 4
+          },
+          {
+            resource: 3,
+            booked: 3
+          },
+          {
+            resource: 3,
+            booked: 3
+          },
+          {
+            resource: 3,
+            booked: 1
+          },
+          {
+            resource: 3,
+            booked: 1
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 2
+          },
+          {
+            resource: 3,
+            booked: 2
+          },
+          {
+            resource: 3,
+            booked: 1
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Waiting appointment",	
+        hours: [
+          {
+            resource: 12,
+            booked: 2
+          },
+          {
+            resource: 12,
+            booked: 1
+          },
+          {
+            resource: 12,
+            booked: 1
+          },
+          {
+            resource: 12,
+            booked: 2
+          },
+          {
+            resource: 12,
+            booked: 4
+          },
+          {
+            resource: 6,
+            booked: 3
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 5
+          },
+          {
+            resource: 12,
+            booked: 4
+          },
+          {
+            resource: 12,
+            booked: 3
+          },
+          {
+            resource: 12,
+            booked: 3
+          },
+          {
+            resource: 12,
+            booked: 1
+          },
+          {
+            resource: 6,
+            booked: 2
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 2
+          },
+          {
+            resource: 12,
+            booked: 4
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 6,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 6,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Warranty",	
+        hours: [
+          {
+            resource: 8,
+            booked: 23
+          },
+          {
+            resource: 8,
+            booked: 27
+          },
+          {
+            resource: 8,
+            booked: 25
+          },
+          {
+            resource: 8,
+            booked: 29
+          },
+          {
+            resource: 8,
+            booked: 28
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 12
+          },
+          {
+            resource: 8,
+            booked: 15
+          },
+          {
+            resource: 8,
+            booked: 10
+          },
+          {
+            resource: 8,
+            booked: 9
+          },
+          {
+            resource: 8,
+            booked: 5
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 4
+          },
+          {
+            resource: 8,
+            booked: 4
+          },
+          {
+            resource: 8,
+            booked: 5
+          },
+          {
+            resource: 8,
+            booked: 8
+          },
+          {
+            resource: 8,
+            booked: 2
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 2
+          },
+          {
+            resource: 8,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 0
+          },
+          {
+            resource: 8,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Used car warranty",	
+        hours: [
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 12
+          },
+          {
+            resource: 1,
+            booked: 2
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 3
+          },
+          {
+            resource: 1,
+            booked: 4
+          },
+          {
+            resource: 1,
+            booked: 1
+          },
+          {
+            resource: 1,
+            booked: 1
+          },
+          {
+            resource: 1,
+            booked: 1
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 1,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      },
+      {
+        name: "Courtesy car",	
+        hours: [
+          {
+            resource: 12,
+            booked: 6
+          },
+          {
+            resource: 12,
+            booked: 5
+          },
+          {
+            resource: 12,
+            booked: 10
+          },
+          {
+            resource: 12,
+            booked: 8
+          },
+          {
+            resource: 12,
+            booked: 5
+          },
+          {
+            resource: 3,
+            booked: 3
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 5
+          },
+          {
+            resource: 12,
+            booked: 7
+          },
+          {
+            resource: 12,
+            booked: 12
+          },
+          {
+            resource: 12,
+            booked: 12
+          },
+          {
+            resource: 12,
+            booked: 12
+          },
+          {
+            resource: 3,
+            booked: 3
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 12,
+            booked: 0
+          },
+          {
+            resource: 3,
+            booked: 0
+          },
+          {
+            resource: 0,
+            booked: 0
+          }
+        ]
+      }
+    ],
     selectedBranch: null,
     activeOverrides: [],
     motResource: {
@@ -889,7 +1945,6 @@ class ResourceDiary extends React.Component {
   }
 
   updateDefaultHours = (newHours, name) => {
-    console.log("Update hours!", newHours, name)
     let defaultHoursCopy = [...this.state.defaultHours];
 
     defaultHoursCopy.forEach((defaultHour, index) => {
@@ -939,7 +1994,7 @@ class ResourceDiary extends React.Component {
           removeToast={this.removeToast} />
       },
       {
-        path: "/default-hours",
+        path: "/manage-resource/default-hours",
         element: <DefaultHours 
           branches={this.state.branches} 
           selectedBranch={this.state.selectedBranch} 
@@ -953,7 +2008,7 @@ class ResourceDiary extends React.Component {
           removeToast={this.removeToast} />
       },
       {
-        path: "/override-hours",
+        path: "/manage-resource/override-hours",
         element: <OverrideHours 
           branches={this.state.branches} 
           selectedBranch={this.state.selectedBranch} 
@@ -965,7 +2020,7 @@ class ResourceDiary extends React.Component {
           removeToast={this.removeToast} />
       },
       {
-        path: "/mot-slots",
+        path: "/manage-resource/mot-slots",
         element: <MotSlots 
           branches={this.state.branches} 
           selectedBranch={this.state.selectedBranch} 
@@ -974,6 +2029,16 @@ class ResourceDiary extends React.Component {
           updateMotResource={this.updateMotResource} 
           toast={this.state.toast} 
           removeToast={this.removeToast} />
+      },
+      {
+        path: "/resource-diary",
+        element: <ResourceDiaryView
+          branches={this.state.branches}
+          selectedBranch={this.state.selectedBranch}
+          setBranch={this.setBranch}
+          activeOverrides={this.state.activeOverrides}
+          defaultHours={this.state.defaultHours}
+          resourceHours={this.state.resourceHours} />
       }
     ]);
 

@@ -18,7 +18,7 @@ const Index = ({branches, setBranch, removeToast}) => {
             <option id={branch.id} value={branch.id}>{branch.name}</option>
           ))}
         </select>
-        <Link to={`/default-hours`} className="ch-btn ch-btn--block ch-btn--success">Continue</Link>
+        <Link to={`/manage-resource/default-hours`} className="ch-btn ch-btn--block ch-btn--success">Continue</Link>
       </div>
     </div>
   )

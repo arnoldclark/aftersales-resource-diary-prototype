@@ -96,7 +96,7 @@ const ResourceDiaryView = ({branches, selectedBranch, setBranch, defaultHours, r
       <div className="ch-container">
         <div className="ch-row">
           <div className="md:ch-col--12">
-            <div className="ch-ba--1 ch-bc--grey-3 ch-rounded--lg ch-shadow--lg ch-bg--white">
+            <div className="ch-ba--1 ch-bc--grey-3 ch-rounded--md ch-shadow--lg ch-bg--white">
               <div className="ch-pa--3 ch-bb--1 ch-bc--grey-3">
                 <h2>Resource diary</h2>
 

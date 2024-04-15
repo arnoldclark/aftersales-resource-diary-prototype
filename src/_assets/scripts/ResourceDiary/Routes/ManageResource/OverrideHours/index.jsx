@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Menu from '../../Components/Menu';
-import BranchSelector from '../../Components/BranchSelector';
+import Menu from '../../../Components/Menu';
+import BranchSelector from '../../../Components/BranchSelector';
 import classNames from 'classnames';
-import formatTime from '../../Utilities/FormatTime';
-import Toast from '../../Components/Toast';
+import formatTime from '../../../Utilities/FormatTime';
+import Toast from '../../../Components/Toast';
+import Header from '../../../Components/Header';
 
 const OverrideHours = ({setBranch, selectedBranch, branches, createOverride, deleteOverride, activeOverrides, toast, removeToast}) => {
   const location = useLocation();
@@ -155,6 +156,7 @@ const OverrideHours = ({setBranch, selectedBranch, branches, createOverride, del
 
   return (
     <>
+      <Header active="manage-resource" />
       <BranchSelector setBranch={setBranch} selectedBranch={selectedBranch} branches={branches} />
 
       <div className="ch-container">

@@ -16,8 +16,8 @@ const Header = ({active}) => {
             </a>
 
             <ul class="ch-navbar__nav ch-pull--left" data-id="ch-navbar-menu">
-              <li className={classNames(`ch-mr--1`, active === "manage-resource" && `ch-navbar--active`)}><Link to={`/manage-resource/default-hours`}>Manage Resource</Link></li>
-              <li className={classNames(active === "resource-diary" && `ch-navbar--active`)}><Link to={`/resource-diary`}>Resource Diary</Link></li>
+              <li className={classNames(`ch-mr--1`, active === "resource-diary" && `ch-navbar--active`)}><Link to={`/resource-diary`}>Resource Diary</Link></li>
+              <li className={classNames(active === "manage-resource" && `ch-navbar--active`)}><Link to={`/manage-resource/default-hours`}>Manage Resource</Link></li>
             </ul>
           </div>
 

@@ -17,7 +17,7 @@ const BranchSelector = ({setBranch, branches, selectedBranch}) => {
     setBranch(newBranch);
     setErrorMessage(null);
     setBranchSelectorOpen(false);
-    navigate("/resource-diary/");
+    navigate("/manage-resource/default-hours/");
   }
 
   return (

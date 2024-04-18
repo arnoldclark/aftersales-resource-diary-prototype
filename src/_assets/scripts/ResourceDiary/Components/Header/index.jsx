@@ -21,7 +21,10 @@ const Header = ({active}) => {
             </ul>
           </div>
 
-          <a href="#" class="ch-navbar__user ch-bg--ac-magenta ch-color--white ch-pull--right ch-mv--3 ch-ml--auto">FM</a>
+          <div className="ch-display--flex ch-align-items--center ch-pull--right ch-ml--auto">
+            <a href="#" class="ch-navbar__user ch-bg--ac-magenta ch-color--white ch-mv--3 ch-mr--2">FM</a>
+            <a href="#" className="ch-link--white">Log out</a>
+          </div>
         </div>
       </div>
     </header>

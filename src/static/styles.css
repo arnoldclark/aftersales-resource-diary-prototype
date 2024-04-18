@@ -87,3 +87,12 @@ body {
   left: 0;
   z-index: 1;
 }
+
+.ch-link--white {
+  color: #fff;
+}
+
+.ch-link--white:hover {
+  text-decoration: none;
+  color: #c0c0c0;
+}

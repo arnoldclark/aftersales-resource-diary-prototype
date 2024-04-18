@@ -24,7 +24,7 @@ const BranchSelector = ({setBranch, branches, selectedBranch}) => {
     <div className="ch-bg--grey-2 ch-pv--5 br-branch-container ch-mb--4">
       <div className="ch-container">
         <div className="ch-display--flex ch-align-items--center">
-          <h2 className="ch-mb--0">{selectedBranch ? selectedBranch.name : "Arnold Clark Hillington"}</h2> 
+          <h2 className="ch-mb--0">{selectedBranch ? selectedBranch.name : "Hillington Renault / Dacia / Alpine"}</h2> 
           <button className="ch-btn ch-btn--link ch-ml--2" onClick={() => setBranchSelectorOpen(!branchSelectorOpen)}>
             {branchSelectorOpen ? 'Cancel' : 'Change branch'}
           </button>
@@ -36,7 +36,7 @@ const BranchSelector = ({setBranch, branches, selectedBranch}) => {
               <select id="branch" name="branch" className="ch-form__control ch-mb--2 ch-width--4" onChange={(e) => setNewBranch(e.target)}>
                 <option value="">Choose a branch</option>
                 { branches.map((branch) => (
-                  <option selected={selectedBranch && branch.id === selectedBranch.id} id={branch.id} value={branch.id}>{branch.name}</option>
+                  <option selected={selectedBranch && branch.id === selectedBranch.id || !selectedBranch && branch.name === "Hillington Renault / Dacia / Alpine"} id={branch.id} value={branch.id}>{branch.name}</option>
                 ))}
               </select>
             </div>

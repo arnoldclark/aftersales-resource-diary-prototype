@@ -150,6 +150,12 @@ const OverrideHours = ({setBranch, selectedBranch, branches, createOverride, del
     return formattedDate;
   }
 
+  const handleDeleteOverride = id => {
+    if(window.confirm("Are you sure you want to delete this override?")) {
+      return deleteOverride(id); 
+    }
+  }
+
   useEffect(() => {
     removeToast()
   }, [location]);
@@ -267,7 +273,7 @@ const OverrideHours = ({setBranch, selectedBranch, branches, createOverride, del
 
                     <hr className="ch-bg--grey-3 ch-mv--4" />
 
-                    <button type="button" className="ch-btn ch-btn--sm ch-color--ac-red" onClick={() => deleteOverride(index)}>Delete override</button>
+                    <button type="button" className="ch-btn ch-btn--sm ch-color--ac-red" onClick={() => handleDeleteOverride(index)}>Delete override</button>
                   </div>
                 ))
               ) : (

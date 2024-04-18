@@ -78,7 +78,7 @@ const OverrideHours = ({setBranch, selectedBranch, branches, createOverride, del
       })
     }
 
-    if(overrideHours.filter(override => override.value != null).length < 1) {
+    if(overrideHours.filter(override => override.value != "").length < 1) {
       return setErrorMessages({
         override: "Please specify at least one override"
       });

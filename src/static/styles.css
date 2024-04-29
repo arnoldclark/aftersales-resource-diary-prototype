@@ -96,3 +96,53 @@ body {
   text-decoration: none;
   color: #c0c0c0;
 }
+
+.ch-bg--ac-green-1 {
+  background-color: #E7F7EC;
+}
+
+.ch-bg--ac-red-1 {
+  background-color: #FFF5F5;
+  opacity: 1;
+  background-image:  repeating-linear-gradient(45deg, #F8EAEA 25%, transparent 25%, transparent 75%, #F8EAEA 75%, #F8EAEA), repeating-linear-gradient(45deg, #F8EAEA 25%, #FFF5F5 25%, #FFF5F5 75%, #F8EAEA 75%, #F8EAEA);
+  background-position: 0 0, 7px 7px;
+  background-size: 14px 14px;
+}
+
+.ch-bg--ac-orange-1 {
+  background-color: #FEE8CC;
+}
+
+.br-resource {
+  position: relative;
+}
+
+.br-resource__notification {
+  width: auto;
+  height: 8px;
+  display: inline-block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.br-resource__notification--available {
+  background: radial-gradient(circle, #72D292 25%, transparent 26%),radial-gradient(circle at bottom left, #72D292 12%, transparent 13%),radial-gradient(circle at bottom right, #72D292 12%, transparent 13%),radial-gradient(circle at top left, #72D292 12%, transparent 13%),radial-gradient(circle at top right, #72D292 12%, transparent 13%);
+  background-size: 1em 1em;
+  background-color: #D0F0D9;
+}
+
+.br-resource__notification--booked {
+
+}
+
+.br-resource__notification--nearly-booked {
+  background: repeating-linear-gradient(135deg, #FDBA66 0, #FDBA66 10%, transparent 0, transparent 50%);
+  background-size: 1em 1em;
+  background-color: #FEE8CC;
+}
+
+

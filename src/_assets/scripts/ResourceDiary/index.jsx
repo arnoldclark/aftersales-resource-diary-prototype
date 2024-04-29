@@ -9,6 +9,8 @@ import DefaultHours from './Routes/ManageResource/DefaultHours';
 import OverrideHours from './Routes/ManageResource/OverrideHours';
 import MotSlots from './Routes/ManageResource/MotSlots';
 import ResourceDiaryView from './Routes/ResourceDiary';
+import ContactCentreView from './Routes/ContactCentreView';
+import ResourceDiaryTwo from './Routes/ResourceDiaryTwo';
 
 class ResourceDiary extends React.Component {
   state = {
@@ -2039,6 +2041,28 @@ class ResourceDiary extends React.Component {
           activeOverrides={this.state.activeOverrides}
           defaultHours={this.state.defaultHours}
           resourceHours={this.state.resourceHours} />
+      },
+      {
+        path: "/contact-centre",
+        element: <ContactCentreView
+          branches={this.state.branches}
+          selectedBranch={this.state.selectedBranch}
+          setBranch={this.setBranch}
+          activeOverrides={this.state.activeOverrides}
+          defaultHours={this.state.defaultHours}
+          resourceHours={this.state.resourceHours}
+        />
+      },
+      {
+        path: "/resource-diary-two",
+        element: <ResourceDiaryTwo
+          branches={this.state.branches}
+          selectedBranch={this.state.selectedBranch}
+          setBranch={this.setBranch}
+          activeOverrides={this.state.activeOverrides}
+          defaultHours={this.state.defaultHours}
+          resourceHours={this.state.resourceHours}
+        />
       }
     ]);
 
